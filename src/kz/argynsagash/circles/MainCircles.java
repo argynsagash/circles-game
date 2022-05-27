@@ -25,14 +25,14 @@ public class MainCircles extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(POS_X, POS_Y, WINDOW_WIDTH, WINDOW_HEIGHT);
         GameCanvas canvas = new GameCanvas(this);
-        initApplication();
+        initBalls();
         add(canvas);
         setResizable(false);
         setTitle("Circles");
         setVisible(true);
     }
 
-    private void initApplication() {
+    private void initBalls() {
         for (int i = 0; i < sprites.length; i++) {
             sprites[i] = new Ball();
         }
