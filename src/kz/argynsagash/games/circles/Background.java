@@ -1,8 +1,11 @@
-package kz.argynsagash.circles;
+package kz.argynsagash.games.circles;
+
+import kz.argynsagash.games.common.GameCanvas;
+import kz.argynsagash.games.common.GameObject;
 
 import java.awt.*;
 
-public class Background extends Sprite {
+public class Background implements GameObject {
 
     private float time;
     private static final float AMPLITUDE = 255f / 2f;
